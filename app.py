@@ -18,6 +18,8 @@ class MyTask(db.Model):
 
     def __repr__(self)->str:
         return f"task {self.id} - {self.content}"
+with app.app_context():
+        db.create_all()
     
 #home_page
 @app.route("/",methods=['POST','GET'])
@@ -69,6 +71,4 @@ def edit(id:int):
     
 
 if __name__ == "__main__":
-    with app.app_context():
-        db.create_all()
     app.run(debug=True)
