@@ -1,0 +1,65 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: papayawhip;
+
+}
+
+.content{
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20x;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+
+    h1{
+        color: palevioletred;
+    }
+   
+
+    table{
+        width: 90%;          /* table takes 90% of parent width */
+        margin: 0 auto;      /* centers it horizontally */
+        border-collapse: separate;  /* if you want rounded corners */
+        border-spacing: 0;          /* remove spacing between cells */
+        border-radius: 10px;        /* rounded corners */
+        overflow: hidden;
+
+            th,td{
+            padding: 10px;
+            border: 1px solid brown;
+
+                th{
+                    background-color: #f0f0f0;
+                    color: #333;
+                }
+        }
+    }
+    a{
+        display: inline-block;
+        padding: 8px 16px;
+        margin: 5px;
+        border-radius: 20px;
+        background-color: cornflowerblue;
+        color: #fff;
+
+        &:hover{
+            background-color: palevioletred;
+        }
+    }
+    input{
+        padding: 10px;
+        margin: 15px;
+        border:solid 1px;
+        border-radius: 5px;
+    }
+    #btn-add{
+        background-color: cornflowerblue;
+        cursor:alias;
+        &:hover{
+            background-color: plum;
+        }
+    }
+}
