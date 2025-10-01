@@ -70,5 +70,5 @@ def edit(id:int):
         return render_template('edit.html',task=task)
     
 
-if __name__ == "__main__":
-    app.run(debug=True)
+# if __name__ == "__main__":
+#     app.run(debug=True)
